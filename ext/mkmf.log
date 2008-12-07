@@ -1,0 +1,266 @@
+have_header: checking for dns_sd.h... -------------------- yes
+
+"gcc -E -I. -I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/universal-darwin9.0 -I/Users/chad/src/dnssd/ext    -Os -pipe -fno-common -Wall  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include <dns_sd.h>
+/* end */
+
+--------------------
+
+have_header: checking for unistd.h... -------------------- yes
+
+"gcc -E -I. -I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/universal-darwin9.0 -I/Users/chad/src/dnssd/ext    -Os -pipe -fno-common -Wall  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include <unistd.h>
+/* end */
+
+--------------------
+
+have_header: checking for sys/types.h... -------------------- yes
+
+"gcc -E -I. -I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/universal-darwin9.0 -I/Users/chad/src/dnssd/ext    -Os -pipe -fno-common -Wall  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include <sys/types.h>
+/* end */
+
+--------------------
+
+have_header: checking for sys/socket.h... -------------------- yes
+
+"gcc -E -I. -I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/universal-darwin9.0 -I/Users/chad/src/dnssd/ext    -Os -pipe -fno-common -Wall  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include <sys/socket.h>
+/* end */
+
+--------------------
+
+have_header: checking for sys/param.h... -------------------- yes
+
+"gcc -E -I. -I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/universal-darwin9.0 -I/Users/chad/src/dnssd/ext    -Os -pipe -fno-common -Wall  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include <sys/param.h>
+/* end */
+
+--------------------
+
+have_header: checking for sys/if.h... -------------------- no
+
+"gcc -E -I. -I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/universal-darwin9.0 -I/Users/chad/src/dnssd/ext    -Os -pipe -fno-common -Wall  conftest.c -o conftest.i"
+conftest.c:1:20: error: sys/if.h: No such file or directory
+checked program was:
+/* begin */
+1: #include <sys/if.h>
+/* end */
+
+--------------------
+
+have_header: checking for net/if.h... -------------------- yes
+
+"gcc -E -I. -I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/universal-darwin9.0 -I/Users/chad/src/dnssd/ext    -Os -pipe -fno-common -Wall  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include <net/if.h>
+/* end */
+
+--------------------
+
+have_func: checking for htons()... -------------------- yes
+
+"gcc -o conftest -I. -I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/universal-darwin9.0 -I/Users/chad/src/dnssd/ext  -arch ppc -arch i386 -Os -pipe -fno-common -Wall conftest.c  -L"." -L"/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib" -L. -arch ppc -arch i386     -lruby  -lpthread -ldl -lm  "
+conftest.c: In function ‘t’:
+conftest.c:3: error: ‘htons’ undeclared (first use in this function)
+conftest.c:3: error: (Each undeclared identifier is reported only once
+conftest.c:3: error: for each function it appears in.)
+conftest.c: In function ‘t’:
+conftest.c:3: error: ‘htons’ undeclared (first use in this function)
+conftest.c:3: error: (Each undeclared identifier is reported only once
+conftest.c:3: error: for each function it appears in.)
+lipo: can't figure out the architecture type of: /var/folders/lT/lTCP9w6tGeOOrtm7Bf11Sk+++TI/-Tmp-//cc6zZSVH.out
+checked program was:
+/* begin */
+1: /*top*/
+2: int main() { return 0; }
+3: int t() { void ((*volatile p)()); p = (void ((*)()))htons; return 0; }
+/* end */
+
+"gcc -o conftest -I. -I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/universal-darwin9.0 -I/Users/chad/src/dnssd/ext  -arch ppc -arch i386 -Os -pipe -fno-common -Wall conftest.c  -L"." -L"/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib" -L. -arch ppc -arch i386     -lruby  -lpthread -ldl -lm  "
+conftest.c: In function ‘t’:
+conftest.c:3: warning: implicit declaration of function ‘htons’
+conftest.c: In function ‘t’:
+conftest.c:3: warning: implicit declaration of function ‘htons’
+checked program was:
+/* begin */
+1: /*top*/
+2: int main() { return 0; }
+3: int t() { htons(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for ntohs()... -------------------- yes
+
+"gcc -o conftest -I. -I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/universal-darwin9.0 -I/Users/chad/src/dnssd/ext  -arch ppc -arch i386 -Os -pipe -fno-common -Wall conftest.c  -L"." -L"/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib" -L. -arch ppc -arch i386     -lruby  -lpthread -ldl -lm  "
+conftest.c: In function ‘t’:
+conftest.c:3: error: ‘ntohs’ undeclared (first use in this function)
+conftest.c:3: error: (Each undeclared identifier is reported only once
+conftest.c:3: error: for each function it appears in.)
+conftest.c: In function ‘t’:
+conftest.c:3: error: ‘ntohs’ undeclared (first use in this function)
+conftest.c:3: error: (Each undeclared identifier is reported only once
+conftest.c:3: error: for each function it appears in.)
+lipo: can't figure out the architecture type of: /var/folders/lT/lTCP9w6tGeOOrtm7Bf11Sk+++TI/-Tmp-//cc28PIN3.out
+checked program was:
+/* begin */
+1: /*top*/
+2: int main() { return 0; }
+3: int t() { void ((*volatile p)()); p = (void ((*)()))ntohs; return 0; }
+/* end */
+
+"gcc -o conftest -I. -I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/universal-darwin9.0 -I/Users/chad/src/dnssd/ext  -arch ppc -arch i386 -Os -pipe -fno-common -Wall conftest.c  -L"." -L"/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib" -L. -arch ppc -arch i386     -lruby  -lpthread -ldl -lm  "
+conftest.c: In function ‘t’:
+conftest.c:3: warning: implicit declaration of function ‘ntohs’
+conftest.c: In function ‘t’:
+conftest.c:3: warning: implicit declaration of function ‘ntohs’
+checked program was:
+/* begin */
+1: /*top*/
+2: int main() { return 0; }
+3: int t() { ntohs(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for if_indextoname()... -------------------- yes
+
+"gcc -o conftest -I. -I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/universal-darwin9.0 -I/Users/chad/src/dnssd/ext  -arch ppc -arch i386 -Os -pipe -fno-common -Wall conftest.c  -L"." -L"/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib" -L. -arch ppc -arch i386     -lruby  -lpthread -ldl -lm  "
+conftest.c: In function ‘t’:
+conftest.c:3: error: ‘if_indextoname’ undeclared (first use in this function)
+conftest.c:3: error: (Each undeclared identifier is reported only once
+conftest.c:3: error: for each function it appears in.)
+conftest.c: In function ‘t’:
+conftest.c:3: error: ‘if_indextoname’ undeclared (first use in this function)
+conftest.c:3: error: (Each undeclared identifier is reported only once
+conftest.c:3: error: for each function it appears in.)
+lipo: can't figure out the architecture type of: /var/folders/lT/lTCP9w6tGeOOrtm7Bf11Sk+++TI/-Tmp-//ccy6Nowa.out
+checked program was:
+/* begin */
+1: /*top*/
+2: int main() { return 0; }
+3: int t() { void ((*volatile p)()); p = (void ((*)()))if_indextoname; return 0; }
+/* end */
+
+"gcc -o conftest -I. -I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/universal-darwin9.0 -I/Users/chad/src/dnssd/ext  -arch ppc -arch i386 -Os -pipe -fno-common -Wall conftest.c  -L"." -L"/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib" -L. -arch ppc -arch i386     -lruby  -lpthread -ldl -lm  "
+conftest.c: In function ‘t’:
+conftest.c:3: warning: implicit declaration of function ‘if_indextoname’
+conftest.c: In function ‘t’:
+conftest.c:3: warning: implicit declaration of function ‘if_indextoname’
+checked program was:
+/* begin */
+1: /*top*/
+2: int main() { return 0; }
+3: int t() { if_indextoname(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for if_nametoindex()... -------------------- yes
+
+"gcc -o conftest -I. -I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/universal-darwin9.0 -I/Users/chad/src/dnssd/ext  -arch ppc -arch i386 -Os -pipe -fno-common -Wall conftest.c  -L"." -L"/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib" -L. -arch ppc -arch i386     -lruby  -lpthread -ldl -lm  "
+conftest.c: In function ‘t’:
+conftest.c:3: error: ‘if_nametoindex’ undeclared (first use in this function)
+conftest.c:3: error: (Each undeclared identifier is reported only once
+conftest.c:3: error: for each function it appears in.)
+conftest.c: In function ‘t’:
+conftest.c:3: error: ‘if_nametoindex’ undeclared (first use in this function)
+conftest.c:3: error: (Each undeclared identifier is reported only once
+conftest.c:3: error: for each function it appears in.)
+lipo: can't figure out the architecture type of: /var/folders/lT/lTCP9w6tGeOOrtm7Bf11Sk+++TI/-Tmp-//ccS2xfS8.out
+checked program was:
+/* begin */
+1: /*top*/
+2: int main() { return 0; }
+3: int t() { void ((*volatile p)()); p = (void ((*)()))if_nametoindex; return 0; }
+/* end */
+
+"gcc -o conftest -I. -I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/universal-darwin9.0 -I/Users/chad/src/dnssd/ext  -arch ppc -arch i386 -Os -pipe -fno-common -Wall conftest.c  -L"." -L"/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib" -L. -arch ppc -arch i386     -lruby  -lpthread -ldl -lm  "
+conftest.c: In function ‘t’:
+conftest.c:3: warning: implicit declaration of function ‘if_nametoindex’
+conftest.c: In function ‘t’:
+conftest.c:3: warning: implicit declaration of function ‘if_nametoindex’
+checked program was:
+/* begin */
+1: /*top*/
+2: int main() { return 0; }
+3: int t() { if_nametoindex(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for gethostname()... -------------------- yes
+
+"gcc -o conftest -I. -I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/universal-darwin9.0 -I/Users/chad/src/dnssd/ext  -arch ppc -arch i386 -Os -pipe -fno-common -Wall conftest.c  -L"." -L"/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib" -L. -arch ppc -arch i386     -lruby  -lpthread -ldl -lm  "
+conftest.c: In function ‘t’:
+conftest.c:3: error: ‘gethostname’ undeclared (first use in this function)
+conftest.c:3: error: (Each undeclared identifier is reported only once
+conftest.c:3: error: for each function it appears in.)
+conftest.c: In function ‘t’:
+conftest.c:3: error: ‘gethostname’ undeclared (first use in this function)
+conftest.c:3: error: (Each undeclared identifier is reported only once
+conftest.c:3: error: for each function it appears in.)
+lipo: can't figure out the architecture type of: /var/folders/lT/lTCP9w6tGeOOrtm7Bf11Sk+++TI/-Tmp-//cc0aBBiJ.out
+checked program was:
+/* begin */
+1: /*top*/
+2: int main() { return 0; }
+3: int t() { void ((*volatile p)()); p = (void ((*)()))gethostname; return 0; }
+/* end */
+
+"gcc -o conftest -I. -I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/universal-darwin9.0 -I/Users/chad/src/dnssd/ext  -arch ppc -arch i386 -Os -pipe -fno-common -Wall conftest.c  -L"." -L"/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib" -L. -arch ppc -arch i386     -lruby  -lpthread -ldl -lm  "
+conftest.c: In function ‘t’:
+conftest.c:3: warning: implicit declaration of function ‘gethostname’
+conftest.c: In function ‘t’:
+conftest.c:3: warning: implicit declaration of function ‘gethostname’
+checked program was:
+/* begin */
+1: /*top*/
+2: int main() { return 0; }
+3: int t() { gethostname(); return 0; }
+/* end */
+
+--------------------
+
+check_sizeof: checking size of void*... -------------------- 4
+
+"gcc -o conftest -I. -I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/universal-darwin9.0 -I/Users/chad/src/dnssd/ext  -arch ppc -arch i386 -Os -pipe -fno-common -Wall conftest.c  -L"." -L"/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib" -L. -arch ppc -arch i386     -lruby  -lpthread -ldl -lm  "
+checked program was:
+/* begin */
+1: #include <stdio.h>
+2: /*top*/
+3: int conftest_const = (int)(sizeof(void*));
+4: int main() {printf("%d\n", conftest_const); return 0;}
+/* end */
+
+./conftest |
+--------------------
+
+check_sizeof: checking size of DNSServiceFlags in dns_sd.h... -------------------- 4
+
+"gcc -o conftest -I. -I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/universal-darwin9.0 -I/Users/chad/src/dnssd/ext  -arch ppc -arch i386 -Os -pipe -fno-common -Wall conftest.c  -L"." -L"/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib" -L. -arch ppc -arch i386     -lruby  -lpthread -ldl -lm  "
+checked program was:
+/* begin */
+1: #include <dns_sd.h>
+2: 
+3: #include <stdio.h>
+4: /*top*/
+5: int conftest_const = (int)(sizeof(DNSServiceFlags));
+6: int main() {printf("%d\n", conftest_const); return 0;}
+/* end */
+
+./conftest |
+--------------------
+
